@@ -19,4 +19,4 @@ async def gray_image(file: UploadFile) -> bytes:
     processed_image = GrayImageController.process_image(contents)
     return StreamingReturn.converted_image(processed_image)
   except Exception as e:
-    return JSONResponse(status_code=404, content={"error": str(e)})
+    return JSONResponse(status_code=500, content={"error": str(e)})
