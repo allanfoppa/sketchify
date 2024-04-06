@@ -12,6 +12,17 @@
 
 Sketchify is a POC based at [Codewithcurious](https://codewithcurious.com/python-projects/convert-image-into-sketch-python/) that allows me to explore this area by building a tool that converts images into sketches. It's a great way to gain practical experience with Python's image manipulation capabilities.
 
+## RESULT
+
+<!-- markdownlint-disable -->
+<div style="display: flex; justify-content: space-between" align="center" style="margin-top: 24px">
+  <img src="./.github/gray.png" width="200px" alt="Image gray converted" />
+  <img src="./.github/blur.png" width="200px" alt="Image gray converted" />
+  <img src="./.github/inverted.png" width="200px" alt="Image gray converted" />
+  <img src="./.github/sketch.png" width="200px" alt="Image gray converted" />
+</div>
+<!-- markdownlint-disable -->
+
 ## SETUP
 
 ### Create a virtual environment
@@ -45,6 +56,8 @@ uvicorn main:app --reload
 
 [Redoc](http://127.0.0.1:8000/redoc)  
 [Swagger](http://127.0.0.1:8000/docs)
+
+Note: The application must be up and running.
 
 ## FINAL CONSIDERATIONS
 
