@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "c711fe93-b525-401c-8f55-365dd1ba7d88",
+		"name": "SKETCHIFY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28363410",
+		"_collection_link": "https://interstellar-crescent-505501.postman.co/workspace/DrumWave~8de79d08-0290-46d4-bbe4-20b510b284c8/collection/28363410-c711fe93-b525-401c-8f55-365dd1ba7d88?action=share&source=collection_link&creator=28363410"
+	},
+	"item": [
+		{
+			"name": "Gray Image",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// RESPONSE BODY\r",
+							"const responseData = pm.response;\r",
+							"// RESPONSE STATUS CODE\r",
+							"const statusCode = pm.response.code;\r",
+							"\r",
+							"// ASSERT STATUS AND TEST\r",
+							"switch (statusCode) {\r",
+							"    case 200:\r",
+							"        utilFunctions.validate200(pm)\r",
+							"        utilFunctions.responseContentTypeImage(pm)\r",
+							"        utilFunctions.responseNotBeEmpty(pm)\r",
+							"        utilFunctions.responseIsValidImage(pm)\r",
+							"        break;\r",
+							"    case 422:\r",
+							"        utilFunctions.validate422(pm)\r",
+							"        utilFunctions.responseAssertKeys(pm, responseData)\r",
+							"        utilFunctions.responseNoContent(pm, responseData)\r",
+							"        break;\r",
+							"    default:\r",
+							"        break;\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "{{URL}}/gray-image"
+			},
+			"response": []
+		},
+		{
+			"name": "Invert image",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// RESPONSE BODY\r",
+							"const responseData = pm.response;\r",
+							"// RESPONSE STATUS CODE\r",
+							"const statusCode = pm.response.code;\r",
+							"\r",
+							"// ASSERT STATUS AND TEST\r",
+							"switch (statusCode) {\r",
+							"    case 200:\r",
+							"        utilFunctions.validate200(pm)\r",
+							"        utilFunctions.responseContentTypeImage(pm)\r",
+							"        utilFunctions.responseNotBeEmpty(pm)\r",
+							"        utilFunctions.responseIsValidImage(pm)\r",
+							"        break;\r",
+							"    case 422:\r",
+							"        utilFunctions.validate422(pm)\r",
+							"        utilFunctions.responseAssertKeys(pm, responseData)\r",
+							"        utilFunctions.responseNoContent(pm, responseData)\r",
+							"        break;\r",
+							"    default:\r",
+							"        break;\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "{{URL}}/invert-image"
+			},
+			"response": []
+		},
+		{
+			"name": "Blur Image",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// RESPONSE BODY\r",
+							"const responseData = pm.response;\r",
+							"// RESPONSE STATUS CODE\r",
+							"const statusCode = pm.response.code;\r",
+							"\r",
+							"// ASSERT STATUS AND TEST\r",
+							"switch (statusCode) {\r",
+							"    case 200:\r",
+							"        utilFunctions.validate200(pm)\r",
+							"        utilFunctions.responseContentTypeImage(pm)\r",
+							"        utilFunctions.responseNotBeEmpty(pm)\r",
+							"        utilFunctions.responseIsValidImage(pm)\r",
+							"        break;\r",
+							"    case 422:\r",
+							"        utilFunctions.validate422(pm)\r",
+							"        utilFunctions.responseAssertKeys(pm, responseData)\r",
+							"        utilFunctions.responseNoContent(pm, responseData)\r",
+							"        break;\r",
+							"    default:\r",
+							"        break;\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "{{URL}}/blur-image"
+			},
+			"response": []
+		},
+		{
+			"name": "Sketch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// RESPONSE BODY\r",
+							"const responseData = pm.response;\r",
+							"// RESPONSE STATUS CODE\r",
+							"const statusCode = pm.response.code;\r",
+							"\r",
+							"// ASSERT STATUS AND TEST\r",
+							"switch (statusCode) {\r",
+							"    case 200:\r",
+							"        utilFunctions.validate200(pm)\r",
+							"        utilFunctions.responseContentTypeImage(pm)\r",
+							"        utilFunctions.responseNotBeEmpty(pm)\r",
+							"        utilFunctions.responseIsValidImage(pm)\r",
+							"        break;\r",
+							"    case 422:\r",
+							"        utilFunctions.validate422(pm)\r",
+							"        utilFunctions.responseAssertKeys(pm, responseData)\r",
+							"        utilFunctions.responseNoContent(pm, responseData)\r",
+							"        break;\r",
+							"    default:\r",
+							"        break;\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/allan.fagundes/Documents/My_Apps/just_to_test/opencv/iron.jpg"
+						}
+					]
+				},
+				"url": "{{URL}}/sketch"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"//**** UTILS FUNCTIONS */\r",
+					"\r",
+					"utilFunctions = {\r",
+					"    validate200: function(pm) {\r",
+					"        pm.test(\"Status code is 200\", () => {\r",
+					"            pm.response.to.have.status(200);\r",
+					"        })\r",
+					"    },\r",
+					"    validate422: function(pm) {\r",
+					"        pm.test(\"Status code is 422\", () => {\r",
+					"            pm.response.to.have.status(422);\r",
+					"        });\r",
+					"    },\r",
+					"    responseContentTypeImage: function(pm) {\r",
+					"        pm.test(\"Response Content-Type is 'image/png'\", () => {\r",
+					"        pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"image/png\");\r",
+					"        })\r",
+					"    },\r",
+					"    responseNotBeEmpty: function(pm) {\r",
+					"        pm.test(\"Response is not empty\", () => {\r",
+					"            pm.expect(pm.response.text()).to.not.be.empty;\r",
+					"        });\r",
+					"    },\r",
+					"    responseIsValidImage: function(pm) {\r",
+					"        pm.test(\"Response is a valid image\", () => {\r",
+					"            pm.expect(pm.response.headers.get(\"Content-Type\")).to.equal(\"image/png\");\r",
+					"        });\r",
+					"    },\r",
+					"    responseAssertKeys: function(pm, responseData) {\r",
+					"        pm.test(\"Response asserts keys\", () => {\r",
+					"            pm.expect(responseData).to.be.an('object');\r",
+					"        })\r",
+					"    },\r",
+					"    responseNoContent: function(pm, responseData) {\r",
+					"        pm.test('Response content', () => {\r",
+					"            pm.expect(responseData.json().error).to.include('Invalid file. Please upload an image.');\r",
+					"        })\r",
+					"    }\r",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

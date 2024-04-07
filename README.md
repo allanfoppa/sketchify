@@ -55,7 +55,8 @@ uvicorn main:app --reload
 ## DOCS
 
 [Redoc](http://127.0.0.1:8000/redoc)  
-[Swagger](http://127.0.0.1:8000/docs)
+[Swagger](http://127.0.0.1:8000/docs)  
+[Postman](./docs/SKETCHIFY.postman_collection.json)
 
 Note: The application must be up and running.
 
